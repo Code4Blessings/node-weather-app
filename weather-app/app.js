@@ -1,6 +1,6 @@
 const request = require('postman-request')
 
-//api key = f25876e7776ba5da8d99030859d645c1
+//api key = f25876e7776ba5da8d99030859d645c1 for weatherstack.com
 
 const url = 'http://api.weatherstack.com/current?access_key=f25876e7776ba5da8d99030859d645c1&query=33.9562,-83.9880&units=f'
 
