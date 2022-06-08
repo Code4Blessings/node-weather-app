@@ -20,3 +20,14 @@ setTimeout(() => {
 ```
 
 console.log('Stopping')
+
+## HTTP Requests
+
+#### Requests
+
+- Takes in 2 arguments -- one is an options object which contains the url. The other is the function to run once the request is made. 
+The function takes in 2 arguments--error (if there is one) and response
+
+#### Customizing HTTP requests with the options object
+
+- Add a json property to the options object and set it to true.  This will automatically parse the response. So you don't need to use JSON.parse in the function.

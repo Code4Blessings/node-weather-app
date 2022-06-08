@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Code4Blessings/node-weather-app/issues"
   },
-  "homepage": "https://github.com/Code4Blessings/node-weather-app#readme"
+  "homepage": "https://github.com/Code4Blessings/node-weather-app#readme",
+  "dependencies": {
+    "postman-request": "^2.88.1-postman.31"
+  }
 }
