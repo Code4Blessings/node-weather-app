@@ -31,3 +31,10 @@ The function takes in 2 arguments--error (if there is one) and response
 #### Customizing HTTP requests with the options object
 
 - Add a json property to the options object and set it to true.  This will automatically parse the response. So you don't need to use JSON.parse in the function.
+
+#### Challenge Print the lat/long for Lawrenceville
+
+1. Fire off a new request to the URL explored in the browser
+2. Have the request module parse it as a JSON
+3. Print the lat/longs to the terminal
+4. Test your work!

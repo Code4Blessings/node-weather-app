@@ -18,3 +18,13 @@ request({url: url, json: true}, (error, response) => {
 //Address -> Lat/Long -> Weather
 
 
+const geoUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/lawrenceville.json?access_token=pk.eyJ1IjoiY29kZTRibGVzc2luZ3MiLCJhIjoiY2txM285bXE5MGFuZTJucHA2eXdjcHRuNiJ9.j_PwXpN_122N5Kp6cZbDyQ&limit=1'
+
+request({url: geoUrl, json: true}, (error, response) => {
+    const geoData = response.body
+    const latitude = geoData.features[0].center[0]
+    const longitude = geoData.features[0].center[1]
+    console.log(latitude, longitude)
+})
+
+
