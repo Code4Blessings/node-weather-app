@@ -38,3 +38,10 @@ The function takes in 2 arguments--error (if there is one) and response
 2. Have the request module parse it as a JSON
 3. Print the lat/longs to the terminal
 4. Test your work!
+
+#### Challenge Handle errors for geocoding request
+
+1. Setup an error handler for low-level errors
+2. Test by disabling network request and running the app
+3. Set up error handling for no matching results
+4. Test by altering the search term and running the app.
