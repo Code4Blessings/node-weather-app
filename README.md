@@ -92,3 +92,87 @@ geocode('Philadelphia', (data) => {
 3. After 2 seconds are up, call the callback function with the sum
 4. Test your work
 
+#### Challenge: Create a reusable function for getting the forecast
+
+1. Setup the "forecast" function in utils/forecast.js
+2. Require the function in app.js and call it as shown below
+3. The forecast function should have three potential calls to callback:
+    - Low level error, pass string for error
+    - Coordinate error, pass string for error
+    - Success, pass forecast string for data (same format as from before)
+
+#### Challenge: Accept location via command line argument
+
+1. Access the command line argument without yargs
+2. Use the string value as the input for geocode
+3. Only geocode if a location was provided
+4. test your work with a couple of locations
+
+## Object Property Shorthand
+
+- Instead of using the code below...
+
+```
+const name = 'Robin'
+const userAge = 47
+
+const user = {
+    name: name
+    age: userAge
+    location: 'Lawrenceville'
+}
+
+```
+
+- We can use destructuring like so...
+
+```
+
+const name = 'Robin'
+const userAge = 47
+
+const user = {
+    name
+    userAge
+    location: 'Lawrenceville'
+}
+
+```
+
+
+console.log(user)
+
+## Object Destructuring
+
+const product = {
+    label: 'Red notebook',
+    price: 3,
+    stock: 201,
+    salePrice: undefined,
+    rating: 4.2
+}
+
+- Too much code here
+
+```
+const label = product.label
+const stock = product.stock
+
+```
+
+- Instead use this
+
+```
+const {label: productLabel, stock} = product
+
+```
+
+- We can also use destructuring in a function
+
+```
+
+const transaction = (type, {label, stock}) => {
+    console.log(type, label, stock)
+}
+
+```
