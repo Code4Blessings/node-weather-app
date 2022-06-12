@@ -152,7 +152,7 @@ const product = {
     rating: 4.2
 }
 
-- Too much code here
+***Too much code here***
 
 ```
 const label = product.label
@@ -176,3 +176,9 @@ const transaction = (type, {label, stock}) => {
 }
 
 ```
+
+#### Challenge: Use both destructuring and property shorthand in the weather app
+
+1. Use destructuring in app.js, forecast.js, and geocode.js 
+2. Use property shorthand in forecast.js and geocode.js
+3. Test your work and ensure app still works.
