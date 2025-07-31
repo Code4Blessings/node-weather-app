@@ -33,7 +33,7 @@ The function takes in 2 arguments--error (if there is one) and response
 - Add a json property to the options object and set it to true.  This will automatically parse the response. So you don't need to use JSON.parse in the function.
 
 ```
-api key = f25876e7776ba5da8d99030859d645c1 for weatherstack.com
+
 
 ```
 
